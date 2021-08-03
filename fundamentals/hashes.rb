@@ -1,7 +1,19 @@
-def new_user greeting="Welcome", first_name: "first", last_name: "last"
-    puts "#{greeting}, #{first_name} #{last_name}"      
-end
-our_user = {first_name: "Oscar", last_name: "Vazquez"}
-new_user                  # => Welcome, first last
-new_user "Hello", our_user # => Hello, Oscar Vazquez
 
+
+h = {first_name: "Coding", last_name: "Dojo"}
+h.delete :last_name
+puts h 
+
+
+h = {}
+h.empty?
+
+
+h = {first_name: "Coding", last_name: "Dojo"}
+h.has_key? :first_name # => true
+h.has_key? "first_name" # => false
+
+
+h = {first_name: "Coding", last_name: "Dojo"}
+h.has_value? "Coding" # => true
+h.has_value? "Bootcamp" # => false
