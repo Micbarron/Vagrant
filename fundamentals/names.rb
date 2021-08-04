@@ -5,10 +5,11 @@ d = {first_name: "James", last_name: "Smith"}
 e = {first_name: "Jennifer", last_name: "Smith"}
 names = [a, b, c, d, e]
 
-def names_info
+
     
     puts " You have #{names.length} in the 'names' array"
-    names.each " The name is '#{first_name} #{last_name}'"
-end
+    names.each do |name|
+# ask about|| syntax
+        puts " The name is '#{name[:first_name]} #{name[:last_name]}'"
+    end
 
-puts names_info
