@@ -25,6 +25,6 @@
 # puts x.max
 
 # 6 Get Average
-ary = [2, 10, 3]
-puts mean = ary.sum(0.2) / ary.length
+# ary = [2, 10, 3]
+# puts ary.reduce(:+) / ary.length.to_f
 
