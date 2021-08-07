@@ -1,16 +1,14 @@
 class Mammal
-    attr_accessor :health
+    
     def initialize
         @health = 150
-end
+    end
 
-def display_health(obj)
-    puts @health
-end
-
-
+    def display_health
+        puts @health
+    end
 
 
 
-mammal1=Mammal.new 
-mammal1.display_health
+
+end 

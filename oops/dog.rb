@@ -1,11 +1,8 @@
 require_relative "mammal"
-class dog < Mammal 
-    def initialize
-        super 
-    end
+class Dog < Mammal 
 
 
-    def pet(self)
+    def pet
         @health +=5
         self
     # if self.class.ancestors.include?(Mammal)
@@ -16,7 +13,7 @@ class dog < Mammal
     #     false
     end
 
-    def walk(self)
+    def walk
         @health -=1
         self
 
@@ -28,7 +25,7 @@ class dog < Mammal
     #     false
     end
 
-    def run(self)
+    def run
         @health -=10
         self
 
@@ -38,10 +35,6 @@ class dog < Mammal
     #     true
     # else
     #     false
-    end
-
-    def subclass_method
-        display_health
     end
 end
 d = Dog.new
