@@ -2,20 +2,15 @@
 @secrets = current_user.secrets  -->
 
 
-
-      Prefix Verb   URI Pattern               Controller#Action
-    sessions POST   /sessions(.:format)       sessions#create
- new_session GET    /sessions/new(.:format)   sessions#new
-     session DELETE /sessions/:id(.:format)   sessions#destroy
-       users GET    /users(.:format)          users#index
-             POST   /users(.:format)          users#create
-    new_user GET    /users/new(.:format)      users#new
-   edit_user GET    /users/:id/edit(.:format) users#edit
-        user GET    /users/:id(.:format)      users#show
-             PATCH  /users/:id(.:format)      users#update
-             PUT    /users/:id(.:format)      users#update
-             DELETE /users/:id(.:format)      users#destroy
-   users_new GET    /users/new(.:format)      users#create
-  users_show GET    /users/show(.:format)     users#show
-  users_edit GET    /users/edit(.:format)     users#edit
-sessions_new GET    /sessions/new(.:format)   sessions#new
+     Prefix Verb   URI Pattern               Controller#Action
+   sessions POST   /sessions(.:format)       sessions#create
+new_session GET    /sessions/new(.:format)   sessions#new
+    session DELETE /sessions/:id(.:format)   sessions#destroy
+      users GET    /users(.:format)          users#index
+            POST   /users(.:format)          users#create
+   new_user GET    /users/new(.:format)      users#new
+  edit_user GET    /users/:id/edit(.:format) users#edit
+       user GET    /users/:id(.:format)      users#show
+            PATCH  /users/:id(.:format)      users#update
+            PUT    /users/:id(.:format)      users#update
+            DELETE /users/:id(.:format)      users#destroy
